@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A watcher for parking-space (Stellplatz) listings of Baugenossenschaft dhu eG, Hamburg, that will send a Telegram message when listings appear, disappear or change. Today the repo contains the Express 5 scaffold and a watcher (`src/watch.ts`, `src/watcher/`) that fetches the live listings and prints them; diffing and notifying are not built yet.
+A watcher for parking-space (Stellplatz) listings of Baugenossenschaft dhu eG, Hamburg, that will send a Telegram message when listings appear, disappear or change. Today the repo contains the Express 5 scaffold and a watcher (`src/watch.ts`, `src/watcher/`) that fetches the live listings, compares them with a state file and prints what is new, removed or changed; sending to Telegram and the hourly schedule are not built yet.
 
 Two untracked local files in the repo root drive the work. They are intentionally not committed, so they may be absent in a fresh clone:
 
@@ -18,6 +18,7 @@ npm run dev          # Express server with reload (tsx watch src/index.ts)
 npm run build        # tsc -> dist/
 npm start            # node dist/index.js (needs a build)
 npm run watch        # watcher, one run (tsx src/watch.ts) — makes a live request to Immosolve
+                     #   add `-- --dry-run` to print without writing data/state.json
 npm run watch:start  # node dist/watch.js (needs a build)
 npm run typecheck    # tsc --noEmit
 npm test             # node:test through tsx (tsx --test src/watcher/*.test.ts)
