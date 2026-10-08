@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A watcher for parking-space (Stellplatz) listings of Baugenossenschaft dhu eG, Hamburg, that will send a Telegram message when listings appear, disappear or change. Today the repo only contains the Express 5 scaffold; the watcher itself is not built yet.
+A watcher for parking-space (Stellplatz) listings of Baugenossenschaft dhu eG, Hamburg, that will send a Telegram message when listings appear, disappear or change. Today the repo contains the Express 5 scaffold and the watcher's DWR reply parser (`src/watcher/`); fetching, diffing and notifying are not built yet.
 
 Two untracked local files in the repo root drive the work. They are intentionally not committed, so they may be absent in a fresh clone:
 
@@ -18,11 +18,12 @@ npm run dev          # Express server with reload (tsx watch src/index.ts)
 npm run build        # tsc -> dist/
 npm start            # node dist/index.js (needs a build)
 npm run typecheck    # tsc --noEmit
+npm test             # node:test through tsx (tsx --test src/watcher/*.test.ts)
 npm run lint         # eslint .   (lint:fix to autofix)
 npm run format       # prettier --write .   (format:check to verify)
 ```
 
-There is no test script yet. The plan adds `node:test` tests run through tsx (`"test": "tsx --test \"src/**/*.test.ts\""`); once that exists, a single file runs with `npx tsx --test src/watcher/parse.test.ts` and a single case with `--test-name-pattern`.
+A single test file runs with `npx tsx --test src/watcher/parse.test.ts` and a single case with `--test-name-pattern`. The test glob is expanded by the shell and only covers `src/watcher/`, because Node 20's `--test` does not expand globs itself.
 
 The husky pre-commit hook runs `lint-staged`, which only runs Prettier on staged files — ESLint and typecheck are not run by the hook, so run them yourself.
 

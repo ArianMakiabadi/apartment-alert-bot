@@ -1,0 +1,14 @@
+//#DWR-INSERT
+//#DWR-REPLY
+var s7=[];var s12={};var s3={};var s9={};var s20={};var s1={};var s15={};var s4={};var s0={};var s31={};
+s7[0]=s12;s7[1]=s9;s7[2]=s1;
+s20.searchRegion="Fuhlsbüttel";s20.stadtteil="";s20.strasse="Fuhlsbüttler Straße";s20.latitude="53.6301";s20.monatlGesamtkosten="120,00";s20.ort="Hamburg";s20.titel="Stellplatz für PKW; sofort frei; s99.id=1;";s20.distanceToChosenLocation=null;s20.hausnummer="401";s20.unr="Baugenossenschaft dhu eG";s20.objectIdentifier="13";s20.category="Tiefgarage";s20.longitude="10.0312";s20.plz="22335";
+s12.id=2400001;s12.inNotePad=null;s12.labels=s20;s12.mandantenOID=2223228;s12.nutzflaeche=12.5;s12.objectIdentifier=13;s12.teaserImage=s3;s12.wohnflaeche=null;
+s9.id=2399107;s9.inNotePad=null;s9.labels=s15;s9.mandantenOID=2223228;s9.nutzflaeche=null;s9.objectIdentifier=13;s9.teaserImage=s3;s9.wohnflaeche=null;
+s15.searchRegion="Langenhorn";s15.stadtteil="";s15.strasse="Käkenflur";s15.latitude="53.6642";s15.monatlGesamtkosten="45,50";s15.ort="Hamburg";s15.titel="Außenstellplatz \"Am Park\" - Mieter\'s Wahl \\ günstig";s15.distanceToChosenLocation=null;s15.hausnummer="16 b";s15.unr="Baugenossenschaft dhu eG";s15.objectIdentifier="13";s15.category="Außenstellplatz";s15.longitude="10.0021";s15.plz="22417";
+s1.id=2371631;s1.inNotePad=null;s1.labels=s0;s1.mandantenOID=2223228;s1.nutzflaeche=12.0;s1.objectIdentifier=13;s1.teaserImage=s4;s1.wohnflaeche=null;
+s0.searchRegion="Ohlsdorf";s0.stadtteil="";s0.strasse="Wolkausweg";s0.latitude="53.6135828";s0.monatlGesamtkosten="90,44";s0.ort="Hamburg";s0.titel="Tiefgaragen-Stellplatz zur Anmietung!";s0.distanceToChosenLocation=null;s0.hausnummer="17 a";s0.unr="Baugenossenschaft dhu eG";s0.objectIdentifier="13";s0.category="Tiefgarage";s0.longitude="10.0349926";s0.plz="22337";
+s3.category="31";s3.description=null;s3.exportTargets=3;s3.filename="47760570.jpg";s3.height=318;s3.labels=s31;s3.originalFilename="Titelbild Parken.jpg";s3.title="Titelbild";s3.width=250;
+s4.category="31";s4.description=null;s4.exportTargets=3;s4.filename="47760571.jpg";s4.height=318;s4.labels=s31;s4.originalFilename="Titelbild Parken.jpg";s4.title="Titelbild";s4.width=250;
+
+dwr.engine._remoteHandleCallback('0','0',{totalSelections:0,totalPages:1,totalObjects:3,immoObjects:s7,currentPage:1});

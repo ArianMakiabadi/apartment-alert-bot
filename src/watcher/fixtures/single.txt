@@ -1,0 +1,8 @@
+//#DWR-INSERT
+//#DWR-REPLY
+var s0=[];var s1={};var s2={};var s3={};var s4={};s0[0]=s1;
+s1.id=2371631;s1.inNotePad=null;s1.labels=s2;s1.mandantenOID=2223228;s1.nutzflaeche=12.0;s1.objectIdentifier=13;s1.teaserImage=s3;s1.wohnflaeche=null;
+s2.searchRegion="Ohlsdorf";s2.stadtteil="";s2.strasse="Wolkausweg";s2.latitude="53.6135828";s2.monatlGesamtkosten="90,44";s2.anzahlGanzeZimmer="";s2.ort="Hamburg";s2.titel="Tiefgaragen-Stellplatz zur Anmietung!";s2.distanceToChosenLocation=null;s2.anzahlHalbeZimmer="";s2.anzahlZimmer="";s2.hausnummer="17 a";s2.unr="Baugenossenschaft dhu eG";s2.objectIdentifier="13";s2.category="Tiefgarage";s2.longitude="10.0349926";s2.plz="22337";
+s3.category="31";s3.description=null;s3.exportTargets=3;s3.filename="47760570.jpg";s3.height=318;s3.labels=s4;s3.originalFilename="Titelbild Parken.jpg";s3.title="Titelbild";s3.width=250;
+
+dwr.engine._remoteHandleCallback('0','0',{totalSelections:0,totalPages:1,totalObjects:1,immoObjects:s0,currentPage:1});
