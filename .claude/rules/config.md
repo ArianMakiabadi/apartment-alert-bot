@@ -12,6 +12,9 @@ paths:
 
 ## Variables
 
-| Variable | `config` key | Default |
-| -------- | ------------ | ------- |
-| `PORT`   | `port`       | `3000`  |
+| Variable     | `config` key | Default           |
+| ------------ | ------------ | ----------------- |
+| `PORT`       | `port`       | `3000`            |
+| `STATE_FILE` | `stateFile`  | `data/state.json` |
+
+`STATE_FILE` is the watcher's state file. A relative path is resolved against the working directory.

@@ -11,6 +11,8 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
+    "watch": "tsx src/watch.ts",
+    "watch:start": "node dist/watch.js",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test src/watcher/*.test.ts",
     "lint": "eslint .",
